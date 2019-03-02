@@ -1,0 +1,30 @@
+@font-face {
+   font-family: arabicT;
+   src: url(arabtype.ttf);
+
+}
+
+* {
+   font-family: arabicT;
+         font-size: 50px;
+
+}
+
+
+#table_container{width:300px;margin:20;}
+
+table {
+  border-collapse: collapse;
+  
+  width: 30;    
+}
+
+table, th, td {
+   padding: 10px;
+  text-align: center;
+}
+
+body
+{
+			 
+}
