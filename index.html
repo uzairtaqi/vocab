@@ -1,0 +1,131 @@
+<html  lang="ar"> 
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+            crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="https://unpkg.com/jspdf@1.5.3/dist/jspdf.min.js"></script>
+      <script src = "https://unpkg.com/jspdf-autotable@3.0.4/dist/jspdf.plugin.autotable.js"></script>
+        <style>
+            @font-face 
+            {
+                font-family: arabicT;
+                src: url(arabtype.ttf);
+            }
+                
+            * 
+            {
+                font-family: arabicT;
+                font-size: 2.3vw;
+
+            }
+
+        
+
+            .wrapper {
+                display: grid;
+                grid-template-columns: [st] 10% [t1] 40% [t2] 40% [t3] 10% [en];
+                justify-content: space-around;
+                /* grid-auto-rows: minmax(300px, auto); */
+                grid-gap: 40px;
+                }
+
+            .wrapper > table {
+                text-align: center;
+                    
+                }
+
+            .item-b
+            {
+                grid-column-start: t1;
+                grid-column-end: t2;
+                grid-row-start: r2;
+                grid-row-end: r3;
+
+            }
+
+            .item-c
+            {
+                grid-column-start: t2;
+                grid-column-end: t3;
+                grid-row-start: r2;
+                grid-row-end: r3;
+
+            }
+
+                * {box-sizing: border-box;}
+
+
+                            /* Style the navigation bar */
+            .navbar {
+            width: 100%;
+            background-color: #330080;
+            overflow: auto;
+            }
+
+            /* Navbar links */
+            .navbar a {
+            float: right;
+            text-align: center;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            /* Navbar links on mouse-over */
+            .navbar a:hover {
+            background-color: #4700b3;
+            }
+
+            /* Current/active navbar link */
+            .active {
+            background-color: #4CAF50;
+            }
+
+            /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+            @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+            } 
+
+        </style>
+
+    </head>
+
+    <body>
+            <div class="navbar">
+                    <a id = "Refresh"><i  class="fas fa-redo-alt"></i></a> 
+            </div>
+    
+        <div class="content">
+        <div class = "wrapper" id="wrap">
+                    <table id="Nouns" class="pure-table pure-table-bordered item-b">
+                            <thead>
+                               
+                            </thead>
+                            <tbody id="NounsB">
+                            </tbody>
+                        </table>              
+        
+                    <table id="Verbs" class="pure-table pure-table-bordered item-c">
+                            <thead>
+                              
+                            </thead>
+                            <tbody id="VerbsB">
+                            </tbody>
+                        </table> 
+                    </div>
+
+            </div>
+    </body>             
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+        <script src="vocab.js"></script>
+
+
+    </html>
