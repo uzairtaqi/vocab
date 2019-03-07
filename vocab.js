@@ -625,9 +625,8 @@ function generateList(tableName, jsonFile, bodyName)
         {
             Cell1.appendChild(newText2); //arabic
             Cell2.appendChild(newText); //english -added
-          //  Cell2.style.color="transparent";
-            Cell2.style.visibility="hidden";
-
+           Cell2.style.color="transparent";
+           // Cell2.style.visibility="hidden";
            
            
         }
@@ -635,8 +634,8 @@ function generateList(tableName, jsonFile, bodyName)
         {
             Cell2.appendChild(newText); //english
             Cell1.appendChild(newText2); //arabic -added
-           // Cell1.style.color="transparent";
-            Cell1.style.visibility="hidden";
+           Cell1.style.color="transparent";
+            //Cell1.style.visibility="hidden";
 
         }
     }    
@@ -691,8 +690,8 @@ $(document).ready(function(){
   function getAnswers(){
     var x = document.getElementsByTagName('td');
    for(i=0;i<x.length;i++) {
-      // x[i].style.color ="black";
-      x[i].style.visibility ="visible";
+      x[i].style.color ="black";
+     // x[i].style.visibility ="visible";
     }
 }
 
